@@ -11,6 +11,10 @@ function App() {
       .then(data => setComics(data))
   }, [])
 
+  function addComic(newComic){
+    setComics([...comics, newComic])
+  }
+
   return (
     <div className="App">
 
@@ -23,7 +27,7 @@ function App() {
         </div>
 
         <div className="sidebar">
-          <ComicForm />
+          <ComicForm onSubmitComic={addComic}/>
         </div>
 
       </div>

@@ -8,11 +8,9 @@ function Comic({comic}) {
   function toggle(){
     setToggleDisplay(!toggleDisplay)
   }
-  
+
   return (
     <div className="comic-item">
-
-      {/* The image should render if the details aren't displayed */}
       {toggleDisplay ? 
       <div>
         <h3 onClick={toggle}>{title}</h3>
@@ -20,10 +18,6 @@ function Comic({comic}) {
         <button>Remove</button>
       </div>:
       <img src={image_url} alt={"Comic Issue Image"} onClick={toggle}/>}
-
-      {/* The details should render if the image isn't displayed */}
-      
-
     </div>
   )
 

@@ -29,6 +29,13 @@
       "title": "Detective Comics",
       "issue": "38",
       "image_url": "https://d1466nnw0ex81e.cloudfront.net/n_iv/600/5401401.jpg"
+    },
+    {
+      "id": "49ed",
+      "image_url": "https://cdn1.vectorstock.com/i/1000x1000/81/90/cucumber-superhero-mascot-vector-42798190.jpg",
+      "title": "Amazing Pickle",
+      "issue": "2",
+      "description": "some des"
     }
   ]
 }
