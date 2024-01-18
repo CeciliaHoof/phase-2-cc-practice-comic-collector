@@ -15,6 +15,11 @@ function App() {
     setComics([...comics, newComic])
   }
 
+  function deleteComic(deletedComic){
+    const updatedComics = comics.filter(comic => comic.id !== deletedComic.id)
+    setComics(updatedComics)
+  }
+
   return (
     <div className="App">
 
@@ -23,7 +28,8 @@ function App() {
       <div className="grid with-sidebar">
 
         <div className="flex-container">
-          <ComicsContainer comics={comics}/>
+          <ComicsContainer comics={comics}
+            onDelete={deleteComic}/>
         </div>
 
         <div className="sidebar">
